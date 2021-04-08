@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    width: 100%;
 }
 
 div.nav-bar {
@@ -344,4 +345,62 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+@media (max-width: 760px){
+    div.nav-bar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    ul.nav-links {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    ul li {
+        margin: 0.6rem 0;
+    }
+
+    div.hero-section {
+        padding:1rem;
+        margin: 0.1rem 0;
+    }
+
+    div.hero-content-btn a {
+        background: #E44C65;
+        text-decoration: none;
+        color: #bcc3c7;
+        font-size: 0.9rem;
+        padding: 10px 30px;
+        border-radius: 3px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    div.background {
+        height: 350px;
+        
+    }
+    div.hero-background-pos {
+        left: 75%;
+        width: 100px;
+        height: 100px;
+    }
+
+    div.snapshot-box-content {
+        display: table;
+        justify-content: space-between;
+    }
+    textarea {
+        width: 100%; 
+    }
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"] {
+        width: 80%;
+    }
+    input[type="email"] {
+        width: 80%;
 }
